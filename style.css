@@ -1,0 +1,134 @@
+body, html {
+    background: black
+}
+
+.section__quote,
+.button__navigation__header,
+.body-header,
+.balance-money,
+.coin-list,
+.info-section,
+.section-header {
+    font-family: Impact, fantasy;
+}
+
+.header__title {
+    font-size: 40px;
+    line-height: 3;
+    font-family: Luminari, fantasy;
+    font-weight: bold;
+    border-radius: 20px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    width: max-content;
+    padding: 20px;
+    white-space: normal;
+    border: 2px solid white;
+}
+
+.section__quote {
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: inherit;
+    background-color: #0b1b4e;
+    border-radius: 20px;
+    color: white;
+    width: max-content;
+    padding: 20px;
+    white-space: normal;
+}
+
+ .header__quote_author {
+     font-size: 20px;
+     color: white;
+     font-weight: normal;
+     padding-left: 20px;
+ }
+
+ .button__navigation__header {
+     font-size: 15px;
+     box-shadow: 8px 8px 10px white;
+     font-weight: normal;
+     border-radius: 20px;
+     text-align: center;
+     background-color: #0b1b4e;
+     color: white;
+     width: max-content;
+     padding: 15px;
+     white-space: normal;
+     margin-top: 12px;
+ }
+
+ .body-header {
+     font-size: 20px;
+     line-height: 2;
+     font-weight: normal;
+     border-radius: 20px;
+     text-align: center;
+     background-color: #6e6480;
+     color: white;
+     max-width: 200px;
+     padding: 20px 100px;
+     white-space: normal;
+ }
+
+ .balance-money {
+     font-size: 50px;
+     font-weight: normal;
+     border-radius: 20px;
+     text-align: center;
+     background-color: #dbc8ff;
+     color: white;
+     width: max-content;
+     padding: 20px 150px;
+     white-space: normal;
+ }
+
+@counter-style repeating-emoji {
+    system: cyclic;
+    symbols: "\2705";
+suffix: " ";
+}
+ .coin-list {
+     font-size: 20px;
+     font-weight: normal;
+     list-style-type: repeating-emoji;
+     border: 2px solid blue;
+     color: black;
+     background-color: #dbc8ff;
+     border-radius: 20px;
+ }
+
+.info-section {
+    font-size: 20px;
+    font-weight: normal;
+    border-radius: 20px;
+    text-align: left;
+    background-color: #6e6480;
+    color: white;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+.section-header {
+    font-size: 24px;
+    font-weight: bold;
+    color: #F52A77;
+}
+
+ ol, li {
+     color: white;
+     line-height: 1.8;
+ }
+
+ nav {
+     display: flex;
+     gap: 2rem
+ }
+ footer {
+     margin-top: 40px;
+     font-size: 24px;
+     text-align: center;
+     color: white;
+     font-family: Chalkduster, fantasy;
+ }
