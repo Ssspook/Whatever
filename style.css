@@ -80,7 +80,7 @@ body, html {
      font-weight: normal;
      border-radius: 20px;
      text-align: center;
-     background-color: #dbc8ff;
+     background-color: #2d0083;
      color: white;
      width: max-content;
      padding: 20px 150px;
@@ -98,7 +98,7 @@ suffix: " ";
      list-style-type: repeating-emoji;
      border: 2px solid blue;
      color: black;
-     background-color: #dbc8ff;
+     background-color: #2d0083;
      border-radius: 20px;
  }
 
