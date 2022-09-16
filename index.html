@@ -2,77 +2,114 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Styles/info-section.css">
+    <link rel="stylesheet" href="Styles/common-style.css">
+    <link rel="stylesheet" href="Styles/balance.css">
+    <link rel="stylesheet" href="Styles/header.css">
+    <link rel="stylesheet" href="Styles/coin-greed.css">
     <title>WhateverCrypto</title>
   </head>
 
   <header class="header">
-    <h1 class="title header__title">
-      WhateverCrypto
-    </h1>
-    <section class="quote section__quote">
-      <q>
-        Производительно, надёжано и безопасно
-      </q>
-      <br>
-      <cite class="quote_author header__quote_author"> @А.В. Маятин </cite>
-    </section>
+    <div class="header-huge-box" style="flex: 0 0 23%">
+      <h1 class="title header__title">
+        WhateverCrypto
+      </h1>
+    </div>
 
-    <nav>
-      <a class="button button__navigation button__navigation__header" href="/stub/">Главная</a>
-      <a class="button button__navigation button__navigation__header" href="/stub/">Кошелёк</a>
+    <nav class="buttons-container" style="flex: 0 0 40%">
+      <a class="button button__navigation button__navigation__main" href="/stub/">Главная</a>
+      <a class="button button__navigation button__navigation__wallet" href="/stub/">Кошелёк</a>
     </nav>
+
+    <div class="logo" style="flex: 0 0 25%">
+      <img src="Images/logo_20.png">
+    </div>
   </header>
 
 
   <body>
-    <main>
-      <h3 class="body-header">Ваш общий баланс:</h3>
-      <h2 class="balance-money">1488 $</h2>
+    <div class="content">
+      <main>
 
-      <h3 class="body-header">Ваши монеты:</h3>
-      <ul class="coin-list">
-        <li> Bitcoin </li>
-        <li> Atom </li>
-        <li> Dash </li>
-      </ul>
-    </main>
+        <div class="body-header">
+          <h3>Ваш общий баланс:</h3>
+        </div>
 
-    <article>
-      <section class="info-section">
-        <h3 class="section-header">Вы можете использовать данное приложение, <strong>только</strong> если Вы:</h3>
-        <ol>
-          <li> Уважаете А.В. Маятина &#128525; </li>
-          <li> Не пишете на джаве &#128545; </li>
-        </ol>
-      </section>
+        <div class="progress-bar"></div>
 
-      <section class="info-section">
-        <h3 class="section-header  section-header__reasons">Причины использовать наше приложение:</h3>
-        <ol>
-          <li>
-            Используя наше приложение, Ваши успехи будут расти аки график функции <em> y = e <sup>x</sup></em>.
-          </li>
-          <li>
-            Мало кто знает, но, используя <ins>WhateverCrypto</ins>, можно вылечиться от рака, найти свою любовь и
-            закрыть физику на 5.
-          </li>
-          <li>
-            Мы заботимся о наших пользователях, поэтому уже дали взятки всем преподавателям физики и математики! Мы заботимся о вас!
-          </li>
-          <li>
-            <i>futuitur cunnus pillōsus multō melius quam glaber
-              eādem continet vapōrem et eādem verrit mentulam</i> &mdash; вот наш принцип!
-          </li>
-        </ol>
-      </section>
+        <div class="balance-money">
+          <div class="money-sign"> <p class="money-sign__sign">$</p> </div>
+          <div class="balance-number"> <h2 class="balance-number__number">1488</h2> </div>
+        </div>
 
-    </article>
+        <div class="body-header">
+          <h3>Ваши монеты:</h3>
+        </div>
+        <table class="coins-container" cellspacing="0">
+          <thead>
+            <tr>
+              <th class="table-header-item">Имя монеты</th>
+              <th class="table-header-item">Цена за монету</th>
+              <th class="table-header-item">Баланс</th>
+              <th class="table-header-item">На счёте</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="table-item">Bitcoin</td>
+              <td class="table-item">20 113$</td>
+              <td class="table-item">0.5 BTC</td>
+              <td class="table-item">10 056$</td>
+            </tr>
+
+          <tr>
+            <td class="table-item">Atom</td>
+            <td class="table-item">12$</td>
+            <td class="table-item">24 ATOM</td>
+            <td class="table-item">288$</td>
+          </tr>
+          <tr>
+            <td class="table-item">Dash</td>
+            <td class="table-item">44$</td>
+            <td class="table-item">4.025 ATOM</td>
+            <td class="table-item">117.27$</td>
+          </tr>
+          </tbody>
+        </table>
+      </main>
+
+      <article class="info-container">
+        <div class="info-section">
+          <h3 class="section-header">Вы можете использовать данное приложение, <strong>только</strong> если Вы:</h3>
+          <ol>
+            <li> Уважаете А.В. Маятина &#128525; </li>
+            <li> Не пишете на джаве &#128545; </li>
+          </ol>
+        </div>
+
+        <section class="info-section">
+          <h3 class="section-header  section-header__reasons">Причины использовать наше приложение:</h3>
+          <ol>
+            <li>
+              Используя наше приложение, Ваши успехи будут расти аки график функции <em> y = e <sup>x</sup></em>.
+            </li>
+            <li>
+              Мало кто знает, но, используя <ins>WhateverCrypto</ins>, можно вылечиться от рака, найти свою любовь и
+              закрыть физику на 5.
+            </li>
+            <li>
+              Мы заботимся о наших пользователях, поэтому уже дали взятки всем преподавателям физики и математики! Мы заботимся о вас!
+            </li>
+            <li>
+              <i>futuitur cunnus pillōsus multō melius quam glaber
+                eādem continet vapōrem et eādem verrit mentulam</i> &mdash; вот наш принцип!
+            </li>
+          </ol>
+        </section>
+      </article>
+    </div>
   </body>
 
-
-
-<footer>
-    По всем вопросам, связанным с приложением, обращаться по телефону <b>+7 (999) 148 88 22 </b>
-</footer>
+<footer class="footer">По всем вопросам, связанным с приложением, обращаться по телефону <b>+7 (999) 148 88 22 </b></footer>
 </html>
