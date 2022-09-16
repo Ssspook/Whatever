@@ -1,0 +1,34 @@
+body, html {
+    margin: 0;
+}
+
+body, header {
+    background-color: #1E2226;
+    padding-bottom: 20px;
+    border-bottom-left-radius: 2em;
+    border-bottom-right-radius: 2em;
+}
+
+.section__quote,
+.button__navigation__header,
+.body-header,
+.balance-money,
+.coin-list,
+.info-section,
+.section-header {
+    font-family: Impact, fantasy;
+}
+
+.content {
+    margin-top: 5rem;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    top: 0;
+    width: 100%;
+    z-index: auto;
+}
