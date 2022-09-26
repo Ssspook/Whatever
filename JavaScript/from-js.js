@@ -25,6 +25,10 @@ function listenToSubmit() {
             return
         }
 
+        if (assetName.length === 0) {
+            return
+        }
+
         const inputField = document.getElementById(`asset-name`)
         inputField.value = "";
 
