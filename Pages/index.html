@@ -25,7 +25,7 @@
     </nav>
 
     <div class="logo" style="flex: 0 0 25%">
-      <img src="../Images/logo_20.png">
+      <img src="../Assets/logo_20.png">
     </div>
   </header>
 
@@ -48,37 +48,42 @@
         <div class="body-header">
           <h3>Ваши монеты:</h3>
         </div>
-        <table class="coins-container" cellspacing="0">
-          <thead>
+          <table class="coins-container" cellspacing="0">
+            <thead>
             <tr>
               <th class="table-header-item">Имя монеты</th>
               <th class="table-header-item">Цена за монету</th>
               <th class="table-header-item">Баланс</th>
               <th class="table-header-item">На счёте</th>
             </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td class="table-item">Bitcoin</td>
-              <td class="table-item">20 113$</td>
-              <td class="table-item">0.5 BTC</td>
-              <td class="table-item">10 056$</td>
+            </thead>
+
+            <tbody>
+            <tr class="loading">
+              <td class="table-item"></td>
+              <td class="table-item"></td>
+              <td class="table-item"></td>
+              <td class="table-item"></td>
             </tr>
 
-          <tr>
-            <td class="table-item">Atom</td>
-            <td class="table-item">12$</td>
-            <td class="table-item">24 ATOM</td>
-            <td class="table-item">288$</td>
-          </tr>
-          <tr>
-            <td class="table-item">Dash</td>
-            <td class="table-item">44$</td>
-            <td class="table-item">4.025 ATOM</td>
-            <td class="table-item">117.27$</td>
-          </tr>
-          </tbody>
-        </table>
+            <tr class="loading">
+              <td class="table-item"></td>
+              <td class="table-item"></td>
+              <td class="table-item"></td>
+              <td class="table-item"></td>
+            </tr>
+
+            <tr class="loading">
+              <td class="table-item"></td>
+              <td class="table-item"></td>
+              <td class="table-item"></td>
+              <td class="table-item"></td>
+            </tr>
+            </tbody>
+          </table>
+        <div class="error-field">
+            <p>&#128295; Что-то пошло не так. Не удалось загрузить Ваши монеты :(</p>
+        </div>
       </main>
 
       <article class="info-container">
@@ -111,6 +116,8 @@
         </section>
       </article>
     </div>
+
+    <script src="../JavaScript/coins-loader.js"></script>
   </body>
 
 <footer class="footer">
