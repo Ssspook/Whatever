@@ -1,0 +1,64 @@
+.input-form {
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.input-field {
+    border-radius: 20px;
+    border: 2px solid #30D5C8;
+    padding: 1.5rem;
+    font-size: 24px;
+}
+
+.submit-button {
+    margin: 1rem 0;
+    border-radius: 20px;
+    border: 2px solid #30D5C8;
+    padding: 1rem;
+    font-size: 24px;
+}
+
+.button-holder {
+    text-align: center;
+}
+
+.favorite-coins {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+}
+.favorite-coin {
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 1rem;
+    border-radius: 20px;
+    border: 2px solid #30D5C8;
+    width: 20rem;
+}
+
+.delete-fav-coin-container {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    position: relative;
+}
+
+.red-cross {
+    font-size: 1.75rem;
+    margin-left: 1rem;
+    position: absolute;
+    right: -30%;
+    bottom: 50%;
+    transform: translateY(50%);
+
+}
+
+button {
+    height: 2.7rem;
+    border-radius: 20px;
+    border: 4px solid red;
+}

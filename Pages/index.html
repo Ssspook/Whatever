@@ -2,11 +2,12 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="Styles/info-section.css">
-    <link rel="stylesheet" href="Styles/common-style.css">
-    <link rel="stylesheet" href="Styles/balance.css">
-    <link rel="stylesheet" href="Styles/header.css">
-    <link rel="stylesheet" href="Styles/coin-greed.css">
+    <link rel="stylesheet" href="../Styles/info-section.css">
+    <link rel="stylesheet" href="../Styles/common-style.css">
+    <link rel="stylesheet" href="../Styles/balance.css">
+    <link rel="stylesheet" href="../Styles/header.css">
+    <link rel="stylesheet" href="../Styles/coin-greed.css">
+    <script src="../JavaScript/hello-js.js"></script>
     <title>WhateverCrypto</title>
   </head>
 
@@ -18,12 +19,13 @@
     </div>
 
     <nav class="buttons-container" style="flex: 0 0 40%">
-      <a class="button button__navigation button__navigation__main" href="/stub/">Главная</a>
-      <a class="button button__navigation button__navigation__wallet" href="/stub/">Кошелёк</a>
+      <a data-link="main" class="button button__navigation button__navigation__main" href="index.html">Главная</a>
+      <a data-link="wallet" class="button button__navigation button__navigation__wallet" href="wallet.html">Кошелёк</a>
+      <a data-link="favorites" class="button button__navigation button__navigation__favorites" href="favorites.html">Избранное</a>
     </nav>
 
     <div class="logo" style="flex: 0 0 25%">
-      <img src="Images/logo_20.png">
+      <img src="../Images/logo_20.png">
     </div>
   </header>
 
@@ -111,5 +113,8 @@
     </div>
   </body>
 
-<footer class="footer">По всем вопросам, связанным с приложением, обращаться по телефону <b>+7 (999) 148 88 22 </b></footer>
+<footer class="footer">
+  По всем вопросам, связанным с приложением, обращаться по телефону <b>+7 (999) 148 88 22 </b>
+  <p class="perf"></p>
+</footer>
 </html>

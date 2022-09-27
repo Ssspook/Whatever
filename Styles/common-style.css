@@ -1,5 +1,5 @@
 body, html {
-    margin: 0;
+    margin: 0 auto;
 }
 
 body, header {
@@ -7,6 +7,13 @@ body, header {
     padding-bottom: 20px;
     border-bottom-left-radius: 2em;
     border-bottom-right-radius: 2em;
+}
+
+body {
+    max-width: 1900px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .section__quote,
@@ -21,6 +28,15 @@ body, header {
 
 .content {
     margin-top: 5rem;
+}
+
+.footer {
+    font-size: 1.5rem;
+    color: white;
+    width: 95%;
+    text-align: center;
+    font-family: Chalkduster, fantasy;
+    margin-top: auto;
 }
 
 header {
