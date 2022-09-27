@@ -10,7 +10,7 @@ body, header {
 }
 
 body {
-    max-width: 1900px;
+    max-width: 2400px;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
