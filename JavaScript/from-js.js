@@ -16,12 +16,12 @@ function listenToSubmit() {
         const id = assetName.hashCode()
 
         if (localStorage.getItem(`${id}`)) {
-            alert("Эта монета уже добавлена!")
+            toast("Произошла неизвестная ошибка!")
             return
         }
 
         if (!assetName.match(assetNameRegExp)) {
-            alert("Разрешены только латинские буквы и цифры!")
+            toast("Недопустимое имя монеты!")
             return
         }
 
@@ -50,6 +50,21 @@ function listenToDelete() {
     });
 }
 
+function toast(message) {
+    // Toastify -- объект, описывающий само уведомление
+    Toastify({
+        text: `${message}`, // Текст уведомления
+        duration: 3000, // Сколько уведомление висит
+        close: true, // Показывать иконку удаления уведомления или нет
+        gravity: "top", // Куда "падают" уведомления, если их больше одного
+        position: "left", // Где всплывают уведомления
+        stopOnFocus: true, // Остановить таймер скрытия уведомления, если на него навели мышкой
+        style: {
+            background: "linear-gradient(to right, #091979, #1f00ff)",
+        } // Цвет
+    }).showToast();
+}
+
 function deleteItem(assetName) {
     const hash = assetName.hashCode()
     localStorage.removeItem(`${hash}`)
@@ -72,7 +87,9 @@ function displayFavoriteCoins() {
     let i = keys.length
 
     while ( i-- ) {
-        addCoinToLayout(localStorage.getItem(keys[i]))
+        if (keys[i] !== "requestCount") {
+            addCoinToLayout(localStorage.getItem(keys[i]))
+        }
     }
 }
 
